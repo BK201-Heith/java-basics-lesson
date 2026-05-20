@@ -32,6 +32,7 @@ public class Customer {
 			System.out.println("\n");
 			System.out.println("Welcome "+customerFirstName+" "+customerLastName+"!"+"\n"+
 			"You are "+customerAge+" years old! \n");
+			// Test
 		
 		// Check if the customer is more than 18 than display eligible to open an account
 		// else display: Not yet eligible to open an account
