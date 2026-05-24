@@ -25,6 +25,8 @@ public class BankClient {
 		currentAccount.accountWithdraw(1100);
 		currentAccount.accountWithdraw(1000);
 		System.out.println("After withdraw: "+currentAccount.accountBalance());
+		
+		System.out.println(savingAccount);
 	
 		
 	}

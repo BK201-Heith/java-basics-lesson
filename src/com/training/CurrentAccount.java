@@ -2,7 +2,7 @@ package com.training;
 
 public class CurrentAccount extends Account {
 
-	private double overdraftLimit;
+	private double overdraftLimit = 200;
 	
 	public CurrentAccount() {
 		

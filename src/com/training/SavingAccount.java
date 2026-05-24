@@ -43,7 +43,7 @@ public class SavingAccount extends Account{
 			}
 			catch(Exception e)
 			{
-				e.printStackTrace();
+				System.out.println("Error");
 			}
 		}
 		else {
