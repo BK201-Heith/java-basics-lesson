@@ -13,17 +13,19 @@ public class User {
 	
 	// Parameterized Constructor, is written whether defined or not. Anything inside it will be called 
 		// when an object is created.
-		public User(String userId, String userName, String userEmail) {
+		public User(String userId, String userName, String userEmail, int userAge) {
 			this.userId = userId;
 			this.userName = userName;
 			this.userEmail = userEmail;
+			this.userAge = userAge;
 		} 
 	
 	// 1. Attributes
 	// instance variables
-	private String userId;
-	private String userName;
-	private String userEmail;
+	protected String userId;
+	protected String userName;
+	protected String userEmail;
+	protected int userAge;
 	
 	// static variables
 	static String organizationName = "OAB";
@@ -48,11 +50,20 @@ public class User {
 	public void setUserEmail(String userEmail) {
 		this.userEmail = userEmail;
 	}
+	
+
+	public int getUserAge() {
+		return userAge;
+	}
+
+	public void setUserAge(int userAge) {
+		this.userAge = userAge;
+	}
 
 	// When putting object into a string, it will show this instead of the hash value --- Source > toString
 	@Override
 	public String toString() {
-		return "User [userId=" + userId + ", userName=" + userName + ", userEmail=" + userEmail + "]";
+		return "User [userId=" + userId + ", userName=" + userName + ", userEmail=" + userEmail + ", userAge=" + userAge +"]";
 	}
 
 	//hashCode and equals override ensures no duplicates are saved in sets as

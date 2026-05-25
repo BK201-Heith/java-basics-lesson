@@ -8,7 +8,7 @@ public class UserClient {
 	public static void main(String[] args) {
 		
 		//Admin extending the User class
-		Admin admin = new Admin("Adm101","Adam","ad@gmail.com",true);
+		Admin admin = new Admin("Adm101","Adam","ad@gmail.com",22,true);
 		System.out.println(admin);
 		
 		// Creating object using Default Constructor
@@ -18,7 +18,7 @@ public class UserClient {
 		user1.setUserEmail("H@gmail.com");
 		
 		// Creating object using parameterized Constructor
-		User user2 = new User("A202","Omar","o@gmail.com"); 
+		User user2 = new User("A202","Omar","o@gmail.com",22); 
 		
 		// Creating object using User Input
 		Scanner sc = new Scanner(System.in);
@@ -29,8 +29,10 @@ public class UserClient {
 		String uName = sc.nextLine();
 		System.out.println("Enter User Email: ");
 		String uEmail = sc.nextLine();
+		System.out.println("Enter User Age: ");
+		int uAge = Integer.parseInt(sc.nextLine());
 		
-		User user3 = new User(uId,uName,uEmail); 
+		User user3 = new User(uId,uName,uEmail,uAge); 
 				
 		
 		// Static variable;
@@ -60,7 +62,9 @@ public class UserClient {
 			String userName = sc.nextLine();
 			System.out.println("Enter User Email: ");
 			String userEmail = sc.nextLine();
-			user[x] = new User(userId, userName, userEmail);
+			System.out.println("Enter User Age: ");
+			int userAge = Integer.parseInt(sc.nextLine());
+			user[x] = new User(userId, userName, userEmail,userAge);
 				}
 		if(count>=3) {
 			System.out.println(user[2]);

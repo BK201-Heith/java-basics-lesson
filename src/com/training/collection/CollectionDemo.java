@@ -38,11 +38,11 @@ public class CollectionDemo {
 		
 		//Set
 		Set<User> userSet = new TreeSet<>(new NameComparator()); // Right brackets will take value from left when empty
-		User user1 = new User("A101","Gaith","g@gm.com");
-		User user2 = new User("A202","Laith","l@gm.com");
-		User user3 = new User("A303","Raith","r@gm.com");
-		User user4 = new User("A404","Haith","h@gm.com");
-		User user5 = new User("A303","Raith","r@gm.com");
+		User user1 = new User("A101","Gaith","g@gm.com",22);
+		User user2 = new User("A202","Laith","l@gm.com",22);
+		User user3 = new User("A303","Raith","r@gm.com",22);
+		User user4 = new User("A404","Haith","h@gm.com",22);
+		User user5 = new User("A303","Raith","r@gm.com",22);
 		userSet.add(user1);
 		userSet.add(user2);
 		userSet.add(user3);
@@ -59,11 +59,11 @@ public class CollectionDemo {
 		
 		//List
 		List<User> userList = new ArrayList<>(); // Right brackets will take value from left when empty
-		User userl1 = new User("A101","Gaith","g@gm.com");
-		User userl2 = new User("A202","Laith","l@gm.com");
-		User userl3 = new User("A303","Raith","r@gm.com");
-		User userl4 = new User("A404","Haith","h@gm.com");
-		User userl5 = new User("A303","Raith","r@gm.com");
+		User userl1 = new User("A101","Gaith","g@gm.com",22);
+		User userl2 = new User("A202","Laith","l@gm.com",22);
+		User userl3 = new User("A303","Raith","r@gm.com",22);
+		User userl4 = new User("A404","Haith","h@gm.com",22);
+		User userl5 = new User("A303","Raith","r@gm.com",22);
 		userList.add(userl4);
 		userList.add(userl5);
 		userList.add(userl3);

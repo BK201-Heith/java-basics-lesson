@@ -4,8 +4,8 @@ public class Admin extends User{
 
 	private boolean isSuperAdmin;
 	
-	public Admin(String userId, String userName, String userEmail, boolean isSuperAdmin) {
-		super(userId, userName, userEmail);
+	public Admin(String userId, String userName, String userEmail,int userAge, boolean isSuperAdmin) {
+		super(userId, userName, userEmail, userAge);
 		this.isSuperAdmin = isSuperAdmin;
 	}
 	public Admin() {
