@@ -1,4 +1,4 @@
-package com.training;
+package com.training.corejava;
 
 import java.util.Objects;
 

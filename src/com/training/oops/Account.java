@@ -1,4 +1,4 @@
-package com.training;
+package com.training.oops;
 
 public abstract class Account {
 	// Variables

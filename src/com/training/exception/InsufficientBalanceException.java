@@ -1,4 +1,4 @@
-package com.training;
+package com.training.exception;
 
 //Custom Exception
 //extending Exception makes it check for errors during compilation, 

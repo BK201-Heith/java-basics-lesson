@@ -1,4 +1,4 @@
-package com.training;
+package com.training.corejava;
 
 public class Admin extends User{
 

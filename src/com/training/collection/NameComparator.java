@@ -1,6 +1,8 @@
-package com.training;
+package com.training.collection;
 
 import java.util.Comparator;
+
+import com.training.corejava.User;
 
 // implements Comparator is used to ensure objects work with TreeSet
 public class NameComparator implements Comparator<User> {
