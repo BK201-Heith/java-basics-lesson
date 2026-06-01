@@ -36,7 +36,9 @@ public class StreamDemo {
 		List<User> userList = Arrays.asList(new User("A233","Ali","Al@gm.com",22),
 				new User("A222","Abbas","Ab@gm.com",22),
 				new User("A244","Sara","Sa@gm.com",26),
-				new User("A255","Annad","An@gm.com",26));
+				new User("A255","Annad","An@gm.com",26),
+				new User("A288","Annad","An@gm.com",22),
+				new User("A266","Annad","An@gm.com",26));
 
 		userList.stream().filter(usr->usr.getUserName().startsWith("A"))
 //			.sorted((u1,u2)->u1.getUserId()
@@ -69,8 +71,28 @@ public class StreamDemo {
 		System.out.println("Count By Age:");
 		Map<Integer, Long> userCount = userList.stream()
 				.collect(Collectors.groupingBy(User::getUserAge,
-						Collectors.counting()));
+						Collectors.counting()
+						)
+					);
 		System.out.println(userCount);
+		
+		// Practice Questions
+		//1. Sort by age then by username
+		System.out.println(" ");
+		System.out.println("Group By Age and username:");
+		Map<Integer, Map<String, List<User>>> userAgeName = userList.stream()
+			    .collect(
+			        Collectors.groupingBy(
+			            User::getUserAge, 
+			            Collectors.groupingBy(User::getUserName)
+			        )
+			    );
+		System.out.println(userAgeName);
+		
+		//2. Get top 3 oldest users
+		//3. Find sum of all ages
+		//4. Find average age of all users
+		//5. Check whether any user is below 18
 	}
 
 }
